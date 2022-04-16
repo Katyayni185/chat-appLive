@@ -1,1 +1,1 @@
-web: waitress-serve --port=8000 djangochat.wsgi:application
+web: gunicorn djangochat.wsgi --log-file -
